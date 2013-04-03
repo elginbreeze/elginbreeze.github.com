@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+
+
+function displayDate(display) 
+{
+	var date = new Date();
+	var year = date.getFullYear();
+	var month = date.getMonth();
+	var day = date.getDate();
+	var hour= date.getHours();
+	var minute = date.getMinutes();
+	var seconds = date.getSeconds();
+	
+	if (display == 1)
+	{
+		document.writeln(month+"/"+day+"/"+year);
+	}
+	else if (display == 2)
+	{
+		document.writeln(hour+":"+minute+":"+seconds);
+	}
+}
+
+function validate()
+{	
+	
+	if (isNaN(document.form1.a.value) || document.form1.a.value==null || document.form1.a.value < 1 || document.form1.a.value > 50)
+  {
+  alert("Please enter a number between 1 and 50");
+  document.form1.a.focus();
+  return false;
+  }
+	else if (isNaN(document.form1.b.value) || document.form1.b.value==null || document.form1.b.value < 1 || document.form1.b.value > 50)
+  {
+  alert("Please enter a number between 1 and 50");
+  document.form1.b.focus();
+  return false;
+  }
+  else if (isNaN(document.form1.c.value) || document.form1.c.value==null || document.form1.c.value < 1 || document.form1.c.value > 50)
+  {
+  alert("Please enter a number between 1 and 50");
+  document.form1.c.focus();
+  return false;
+  }
+	else if (isNaN(document.form1.d.value) || document.form1.d.value==null || document.form1.d.value < 1 || document.form1.d.value > 50)
+  {
+  alert("Please enter a number between 1 and 50");
+  document.form1.d.focus();
+  return false;
+  }
+  else if (isNaN(document.form1.e.value) || document.form1.e.value==null || document.form1.e.value < 1 || document.form1.e.value > 50)
+  {
+  alert("Please enter a number between 1 and 50");
+  document.form1.e.focus();
+  return false;
+  }
+  
+ else
+ {
+  var total=((parseInt(document.form1.a.value)+parseInt(document.form1.b.value)+parseInt(document.form1.c.value)+parseInt(document.form1.d.value)+parseInt(document.form1.e.value))*3);
+  alert(total);
+  
+  if ((parseInt(total))>100)
+  	{
+		setCookie("Large", "Large", 2);
+	}
+   if ((parseInt(total)) == 100) //It said less or more. What about = ??
+	{
+		setCookie("Mid", "Mid", 2);
+	}
+   if ((parseInt(total)) < 100)
+	{
+		setCookie("Small", "Small", 2);
+	}
+	alert("done");
+	}
+
+}
+
+function setCookie(c_name,value,exdays)
+{
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value=escape(value) + ((exdays==null) ? "" : "; 	expires="+exdate.toUTCString());
+	document.cookie=c_name + "=" + c_value;
+        alert("almost done with cookie");
+	var cookieResult = c_name;
+	if (cookieResult)
+	{
+		cookieVal = (unescape(cookieResult));
+		var newWin = open("", "", "status=yes");
+		newWin.document.writeln('The size is ' + cookieVal)	
+		newWin.document.close();
+	}
+}
+
+</script>
+
+
+</head>
+
+<body onLoad="document.form1.a.focus();">
+
+
+<form>
+<input type="button" value="Date" onclick="displayDate(1)">
+</form>
+<br />
+<form>
+<input type="button" value="Time" onclick="displayDate(2)" />
+</form>
+<br />
+
+
+<form name="form1" onsubmit="return validate()">
+Number 1<input type="text" name="a" /><br />
+Number 2<input type="text" name="b" /><br />
+Number 3<input type="text" name="c" /><br />
+Number 4<input type="text" name="d" /><br />
+Number 5<input type="text" name="e" /><br />
+<input type="submit" value="Submit">
+</form>	
+
+
+<br />
+<br />
+
+<a  href="#"    
+    onMouseOver = "document.facebook.src = 'fb.png';"
+    onMouseOut = "document.facebook.src = 'twitter.png';" >
+    <img  NAME="facebook"  src="twitter.png"> </a>
+    
+<br />
+<img  NAME="ire"  src="horse.jpg">
+<br />
+<a  href="#"    
+    onMouseUp = "document.ire.src = 'horse.jpg';"
+    onMouseDown = "document.ire.src = 'Guiness.jpg';" >Click me!!
+     </a>
+
+
+
+</body>
+</html>
+

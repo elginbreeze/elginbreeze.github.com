@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Slide Out Navigation : &lt;default&gt;</title>
+<script type='text/javascript' src='js/jquery-1.4.2.js'></script>
+<style type="text/css">
+ul#navigation {
+      position: fixed;
+      margin: 0px;
+      padding: 0px;
+      top: 0px;
+      right: 10px;
+      list-style: none;
+      z-index:999999;
+      width:auto;
+      }
+      ul#navigation li {
+      display:inline;
+      float:left; 
+      width:102px;   
+      }
+      ul#navigation li a {
+      display: block;
+      float:left;
+	  color:#000000;
+      margin-top: -2px;
+      height: 25px;
+      width:100px;
+      background-repeat:no-repeat;
+      background-position:50% 10px;
+      background-color:#e7f2f9;
+      border:1 solid #bddcef;
+      -moz-border-radius:0px 0px 10px 10px;
+      -webkit-border-bottom-right-radius: 10px;
+      -webkit-border-bottom-left-radius: 10px;
+      -khtml-border-bottom-right-radius: 10px;
+      -khtml-border-bottom-left-radius: 10px;
+      text-decoration:none;
+      text-align:center;
+      padding-top:80px;
+      opacity: 0.7;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);  
+      }
+      
+      ul#navigation li a:hover{
+      background-color:#cae3f2;
+      }
+      ul#navigation .home a{
+      background-image: url(png/settings.png);
+      }
+      ul#navigation .about a{
+      background-image: url(png/notes.png);
+      }
+      ul#navigation .search a{
+      background-image: url(png/notes.png);
+      }
+      ul#navigation .podcasts a{
+      background-image: url(png/ipod.png);
+      }
+      ul#navigation .rssfeed a{
+      background-image: url(png/weather.png);
+      }
+      ul#navigation .photos a{
+      background-image: url(png/maps.png);
+      }
+      ul#navigation .contact a{
+      background-image: url(png/chat.png);
+      }
+</style>
+</head>
+
+<body>
+<ul id="navigation">
+      <li class="home"><a href="">Home</a></li>
+      <li class="about"><a href="">About</a></li>
+      <li class="search"><a href="">Search</a></li>
+      <li class="photos"><a href="">Photos</a></li>
+      <li class="rssfeed"><a href="">Rss Feed</a></li>
+      <li class="podcasts"><a href="">Podcasts</a></li>
+      <li class="contact"><a href="">Contact</a></li>
+      </ul>
+<script type="text/javascript">
+$(function() {
+      var d=300;
+      $('#navigation a').each(function(){
+      $(this).stop().animate({
+      'marginTop':'-80px'
+      },d+=150);
+      });
+      $('#navigation > li').hover(
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-2px'
+      },200);
+      },
+      function () {
+      $('a',$(this)).stop().animate({
+      'marginTop':'-80px'
+      },200);
+      }
+      );
+      });
+</script>
+</body>
+</html>

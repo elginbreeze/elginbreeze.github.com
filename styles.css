@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	font-family: "Times New Roman", Geneva, sans-serif;
+	text-align:center;
+	width: 100%;
+	background-color: #A4A07D;
+}    
+   
+#container {
+	width: 100%;
+	text-align: center;
+	font-size: medium;
+	font-family: "Times New Roman", Geneva, sans-serif;
+}
+    
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;	
+}
+a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFFFFF;
+	font-style:italic;
+	text-decoration: none;
+}
+a:active {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+#header {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height:130px;
+	width: 100%;
+}
+
+#headerTable {
+	margin:0px;
+	margin-left:auto;
+	margin-right:auto;
+	border:none;
+	padding:0;
+	border-spacing:0;
+	width: justify;
+}
+
+#spacer {
+	background-color: #000;
+	width:justify;
+	height:130;
+	border:none;
+	padding:0;
+	border-spacing:0;
+}
+
+#leftRight {
+	width:96px;
+	height: 130px;
+	padding:0;
+	border:none;
+	border-spacing:0;
+}
+
+#mainLogo {
+	border-spacing:0;
+	width: 458px;
+	height: 130px;
+	border: none;
+	padding:0;
+}
+
+#topMenu{
+	width: 100%;
+	margin-bottom: 0px;
+	background-color: #000;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	font-size:medium;
+	font-family: "Times New Roman", Geneva, sans-serif;
+	height: 40px;
+	letter-spacing: 1px;
+}
+
+#bottomMenu {
+	width: 100%;
+	background-color:#000;
+	margin-top: 0px;
+	margin-bottom:0px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	font-size:medium;
+	font-family: "Times New Roman", Geneva, sans-serif;
+	vertical-align:baseline;
+	letter-spacing: 1px;
+	height: 43px;
+}
+
+.menuItems {
+	width: 20%;
+	font-family:"Times New Roman", Geneva, sans-serif;
+	font-weight: normal;
+	color: #FFF;
+}
+
+#underlineMenuItem {
+	width: 20%;
+	font-family:"Times New Roman", Geneva, sans-serif;
+	font-weight: bold;
+	text-decoration: underline;
+	color: #FFF;
+}
+
+table.pageMenu {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 60%;
+	background-color:#000;
+	vertical-align: central;
+	height:40px;
+}
+
+#center {
+	background-image: url(background1.jpg);
+	width: 60%;
+	min-height: 500px;
+	min-width: 525px;
+	max-width:800px;
+	min-height: 900px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: -5px;
+	border-left:groove; 
+	border-left-width:medium; 
+	border-left-color:#000; 
+	border-right:groove; 
+	border-right-width:medium; 
+	border-right-color:#000;
+	color: #000;
+}
+#slideshow {
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	text-align: center;
+}
+
+#pageTitle {
+	text-align: center;
+	color: #000;
+	font-size: large;
+	border:none;
+	padding:10px;
+	width:484px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#aboutUs {
+	color: #000;
+	text-align:left;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-weight: lighter;
+}
+
+#contactTable {
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	padding: 15px;
+	width: 90%;
+	text-align:center; 
+	color:#000;
+	margin-top: 15px;	
+}
+
+#socialMedia {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.shopClass {
+	color:#000; 
+	font-size: large;
+	font-weight: bold;
+	width: 100%;
+	text-align: 100%;
+	position: relative;
+}
+
+.plantPics {
+	width: 100%;
+	color:#000;
+	font-size:medium;
+	margin-bottom:0px;
+	white-space:normal;
+	margin-top: 0px;
+	/*word-wrap: normal;
+	text-wrap: normal;
+	text-align: center;*/
+}
+tr.plantPicRow {
+	word-wrap: normal;
+	text-wrap: normal;
+	text-align: center;
+}
+
+div.shadeDiv {
+	margin:4pt; 
+	min-height:15em; 
+	padding:10pt; 
+	text-align: center; 
+	margin-top: 0px;
+	width: 100%; 
+    font-size:14pt;
+    padding:0pt 2pt 2pt 2pt;
+}
+div.openInnerTab {
+	width: 100%; 
+	display:none;
+    font-size:14pt;
+    padding:0pt 2pt 2pt 2pt;
+}
+div.inInnerTab {
+	min-height:15em; 
+	padding:10pt;
+}
+
+#navigationProperties
+{
+	float:left;
+	width: 10%;
+	text-align:center;
+	margin-right:5%;
+	margin-left:5%;
+	margin-bottom: 0px;
+	background-color:#000;
+	color: #FFF;
+	min-width: 140px;
+	position: absolute;
+}
+
+/*{
+	float:left;
+	width: 11%;
+	text-align:center;
+	margin-right:5%;
+	margin-left:5%;
+	margin-bottom: 0px;
+	background-color:#000;
+	min-width: 120px;
+}*/
+
+#sideNavigationMenu
+{
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	padding: 0;
+	background-color: #000;
+	width: 100%; 
+	text-align:center;
+	color:#FFF; 
+	font-size:x-large;
+	background-color: 000;
+}
+	
+td.sideMenuChoices {
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size:large; 
+	color:#FFF;
+	background-color: #000;
+	min-width: 120px;
+	float: left;
+}
+
+#slideshowOuter {
+	width:100%; 
+	text-align: right; 
+	position: inherit;
+}
+
+#slideshowInner {
+	
+	margin-left:25%;
+	margin-right:auto;
+}
+
+#welcomeHours {
+	width:100%; 
+	text-align: right; 
+	position: inherit;
+}
+
+#map {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}

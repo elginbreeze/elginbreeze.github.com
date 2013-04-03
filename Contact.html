@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Gallery</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function validateForm()
+{ 
+
+var y=document.forms["contactMe"]["name"].value;
+if (y==null || y=="")
+  {
+  alert("Your Name must be filled out");
+  return false;
+  }
+  
+var x=document.forms["contactMe"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+ else
+ alert("Thank you for submitting your comments!");
+}
+
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('fb2.png','twitter2.png')">
+<div id="container">
+<div id="header">
+<table id="headerTable"><tr>
+<td id="leftRight"><img src="logoredo_r1_c1.gif" width="96" height="130" alt="left" /></td>
+<td id="spacer">&nbsp;</td>
+<td id="mainLogo"><img src="logoredo_r1_c2.gif" width="458" height="130" alt="logo" /></td>
+<td id="spacer">&nbsp;</td>
+<td id="leftRight"><img src="logoredo_r1_c3.gif" width="96" height="130" alt="left" /></td>
+</tr></table>
+</div>
+
+<div id="topMenu">
+          <table class="pageMenu"><tbody><tr>
+                <th class="menuItems"><a href="W2redo.html" title="Home" target="_self">Home</a></th>
+                <th class="menuItems"><a href="AboutUs.html" title="About Us" target="_self">About Us</a></th>
+               <th class="menuItems"><a href="Shop.html" title="Shop" target="_self">Shop</a></th>
+               <th class="menuItems"><a href="Gallery.html" title="Contact" target="_self">Gallery</a></th>
+                <th id="underlineMenuItem">Contact Us</th>
+              </tr></tbody></table>
+        </div>
+<div id="center">
+<table id="pageTitle"><tr>
+    <th>CONTACT US</th>
+    </tr></table>
+<div >
+	  <table id="contactTable">
+		<tr><td>Email Us</td></tr> 
+                  <tr>
+                    <td>
+                  <form name="contactMe" method="get" action="mailto:briannelmurphy@gmail.com?subject=Comments" onsubmit="return validateForm();">
+                  <select name="topic" size="3" style="text-align:center;">
+                  	<option selected value="comment">Comment</option>
+                    <option value="question">Question</option>
+                    <option value="request">Request Service</option>
+                  </select><p></p>
+                  Name: <input type="text" name="name" maxlength="40" width= "170px" /><br />
+                  Email: <input type="text" name="email" maxlength="40" width= "200px;" />
+                  <p></p>
+                  <textarea name="comments" rows="6" cols="50" wrap="soft">Drop Us A line</textarea>
+                  <br />
+                  <input type="submit" name="submit" value="Submit" />
+                  <input type="button" name="reset" value="Reset" />
+                  </form>
+                  </td></tr></table>
+<table id="socialMedia"><tr><td>
+                  <a href="https://www.facebook.com/pages/Douglas-Avenue-Plant-Sale/112997948735125" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Facebook','','fb2.png',1)"><img src="fb.png" alt="Facebook" name="Facebook" width="55" height="55" border="0" id="Facebook" /></a></td><td>
+                <a href="http://www.twitter.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Twitter','','twitter2.png',1)"><img src="twitter.png" alt="Twitter" name="Twitter" width="60" height="58" border="0" id="Twitter" /></a></td></tr></table>
+                 
+</div>
+
+<div id="map">
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=809+Douglas+Ave,+Elgin,+IL+60120&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=41.089062,93.076172&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=809+Douglas+Ave,+Elgin,+Illinois+60120&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=42.051654,-88.28348&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=809+Douglas+Ave,+Elgin,+IL+60120&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=41.089062,93.076172&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=809+Douglas+Ave,+Elgin,+Illinois+60120&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=42.051654,-88.28348" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+</div>
+</div>
+<div id="bottomMenu">
+          <table class="pageMenu"><tr>
+                <th class="menuItems">Company</th>
+                <th class="menuItems">Careers</a></th>
+               <th class="menuItems">Partners</th>
+               <th class="menuItems">Terms and Conditions</th>
+                <th class="menuItems">Support</th>
+              </tr></table>
+        </div>
+</div>
+</body>
+</html>
